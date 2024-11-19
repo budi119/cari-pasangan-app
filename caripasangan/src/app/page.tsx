@@ -43,6 +43,7 @@ from "@/components/ui/tabs"
 
 export default function Home() {
   return (
+    <div>
     <div className="container mx-auto grid grid-rows-[20px_1fr_20px] flex flex-col gap-x-2 font-[family-name:var(--font-geist-sans)]">
       <main className="navbar flex flex-col gap-50 row-start-2 items-center sm:items-end">
         <div className="login">
@@ -109,8 +110,85 @@ export default function Home() {
     </DropdownMenu>
 
         </div>
-
       </main>
+      </div>
+      <div className="Rekomendasi container mx-auto flex float gap-4">
+      <Card>
+        <CardContent className="w-[200px] p-0">
+          <Card className="w-[200px] h-[200px] ">Foto</Card>
+         </CardContent>
+         <CardHeader>
+            <CardTitle>Nama Akune</CardTitle>
+            <CardDescription>Username</CardDescription>
+          </CardHeader>
+          <CardFooter>
+            <p>sosmed</p>
+          </CardFooter>
+      </Card>
+      <Card>
+        <CardContent className="w-[200px] p-0">
+          <Card className="w-[200px] h-[200px] ">Foto</Card>
+         </CardContent>
+         <CardHeader>
+            <CardTitle>Nama Akune</CardTitle>
+            <CardDescription>Username</CardDescription>
+          </CardHeader>
+          <CardFooter>
+            <p>sosmed</p>
+          </CardFooter>
+      </Card>
+      <Card>
+        <CardContent className="w-[200px] p-0">
+          <Card className="w-[200px] h-[200px] ">Foto</Card>
+         </CardContent>
+         <CardHeader>
+            <CardTitle>Nama Akune</CardTitle>
+            <CardDescription>Username</CardDescription>
+          </CardHeader>
+          <CardFooter>
+            <p>sosmed</p>
+          </CardFooter>
+      </Card>
+      <Card>
+        <CardContent className="w-[200px] p-0">
+          <Card className="w-[200px] h-[200px] ">Foto</Card>
+         </CardContent>
+         <CardHeader>
+            <CardTitle>Nama Akune</CardTitle>
+            <CardDescription>Username</CardDescription>
+          </CardHeader>
+          <CardFooter>
+            <p>sosmed</p>
+          </CardFooter>
+      </Card>
+      <Card>
+        <CardContent className="w-[200px] p-0">
+          <Card className="w-[200px] h-[200px] ">Foto</Card>
+         </CardContent>
+         <CardHeader>
+            <CardTitle>Nama Akune</CardTitle>
+            <CardDescription>Username</CardDescription>
+          </CardHeader>
+          <CardFooter>
+            <p>sosmed</p>
+          </CardFooter>
+      </Card>
+      <Card>
+        <CardContent className="w-[200px] p-0">
+          <Card className="w-[200px] h-[200px] ">Foto</Card>
+         </CardContent>
+         <CardHeader>
+            <CardTitle>Nama Akune</CardTitle>
+            <CardDescription>Username</CardDescription>
+          </CardHeader>
+          <CardFooter>
+            <p>sosmed</p>
+          </CardFooter>
+      </Card>
+      
+
+      </div>
+      
     </div>
   );
 }
