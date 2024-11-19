@@ -1,7 +1,1 @@
-ini coba diganti
-
-aku ini mengganti pa budi
-
-update guys
-
-ini hasil commit baru pa budi 
+ini first commit untuk project cari-pasangan-app by budi
