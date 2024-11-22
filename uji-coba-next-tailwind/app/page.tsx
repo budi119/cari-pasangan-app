@@ -32,8 +32,60 @@ const HomePage = () => {
       {/* halaman utama */}
       <div className='container mt-20 mb-20 mx-auto'>
         <div className='flex flex-row'>
-          <div className="basis-1/2 mx-auto">
-            <div className="w-full max-w-md p-4 bg-[#FFF4EA] border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+          <div className="basis-1/2 mx-auto flex float gap-1">
+          <Card className='bg-[#FFF4EA]'>
+            <CardContent className="w-[200px] p-0">
+              <Card className="w-[200px] h-[200px] "><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9zlHyRJdav67jwTgcQ5Mzg-MkCFcpNUT68g&s' className="w-[200px] h-[200px] rounded-sm"></img></Card>
+            </CardContent>
+          <CardHeader>
+            <CardTitle>LORA</CardTitle>
+            <CardDescription>@lauraziphoraa</CardDescription>
+          </CardHeader>
+          <CardFooter>
+            <p>sosmed</p>
+          </CardFooter>
+          </Card>
+          <Card>
+            <CardContent className="w-[200px] p-0">
+              <Card className="w-[200px] h-[200px] ">Foto</Card>
+            </CardContent>
+          <CardHeader>
+            <CardTitle>Nama Akune</CardTitle>
+            <CardDescription>Username</CardDescription>
+          </CardHeader>
+          <CardFooter>
+            <p>sosmed</p>
+          </CardFooter>
+          </Card>
+          <Card>
+            <CardContent className="w-[200px] p-0">
+              <Card className="w-[200px] h-[200px] ">Foto</Card>
+            </CardContent>
+          <CardHeader>
+            <CardTitle>Nama Akune</CardTitle>
+            <CardDescription>Username</CardDescription>
+          </CardHeader>
+          <CardFooter>
+            <p>sosmed</p>
+          </CardFooter>
+          </Card>
+          <Card>
+            <CardContent className="w-[200px] p-0">
+              <Card className="w-[200px] h-[200px] ">Foto</Card>
+            </CardContent>
+          <CardHeader>
+            <CardTitle>Nama Akune</CardTitle>
+            <CardDescription>Username</CardDescription>
+          </CardHeader>
+          <CardFooter>
+            <p>sosmed</p>
+          </CardFooter>
+          </Card>
+          
+            
+          </div>
+          <div className="basis-1/8 grid gap-y-2">
+          <div className="w-[300px] p-4 bg-[#FFF4EA] border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
               <div className="flex items-center justify-between mb-4 pr-2">
                 <h5 className="text-xl font-bold leading-none text-gray-900 dark:text-white">Highlight People</h5>
                 <a href="#" className="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500">
@@ -91,80 +143,6 @@ const HomePage = () => {
                 </ul>
               </div>
             </div>
-          </div>
-          <div className="basis-1/8 grid gap-y-2">
-          <Card className='bg-[#FFF4EA]'>
-            <CardContent className="w-[200px] p-0">
-              <Card className="w-[200px] h-[200px] "><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9zlHyRJdav67jwTgcQ5Mzg-MkCFcpNUT68g&s' className="w-[200px] h-[200px] rounded-sm"></img></Card>
-            </CardContent>
-          <CardHeader>
-            <CardTitle>LORA</CardTitle>
-            <CardDescription>@lauraziphoraa</CardDescription>
-          </CardHeader>
-          <CardFooter>
-            <p>sosmed</p>
-          </CardFooter>
-          </Card>
-          <Card>
-            <CardContent className="w-[200px] p-0">
-              <Card className="w-[200px] h-[200px] ">Foto</Card>
-            </CardContent>
-          <CardHeader>
-            <CardTitle>Nama Akune</CardTitle>
-            <CardDescription>Username</CardDescription>
-          </CardHeader>
-          <CardFooter>
-            <p>sosmed</p>
-          </CardFooter>
-          </Card>
-          <Card>
-            <CardContent className="w-[200px] p-0">
-              <Card className="w-[200px] h-[200px] ">Foto</Card>
-            </CardContent>
-          <CardHeader>
-            <CardTitle>Nama Akune</CardTitle>
-            <CardDescription>Username</CardDescription>
-          </CardHeader>
-          <CardFooter>
-            <p>sosmed</p>
-          </CardFooter>
-          </Card>
-          <Card>
-            <CardContent className="w-[200px] p-0">
-              <Card className="w-[200px] h-[200px] ">Foto</Card>
-            </CardContent>
-          <CardHeader>
-            <CardTitle>Nama Akune</CardTitle>
-            <CardDescription>Username</CardDescription>
-          </CardHeader>
-          <CardFooter>
-            <p>sosmed</p>
-          </CardFooter>
-          </Card>
-          <Card>
-            <CardContent className="w-[200px] p-0">
-              <Card className="w-[200px] h-[200px] ">Foto</Card>
-            </CardContent>
-          <CardHeader>
-            <CardTitle>Nama Akune</CardTitle>
-            <CardDescription>Username</CardDescription>
-          </CardHeader>
-          <CardFooter>
-            <p>sosmed</p>
-          </CardFooter>
-          </Card>
-          <Card>
-            <CardContent className="w-[200px] p-0">
-              <Card className="w-[200px] h-[200px] ">Foto</Card>
-            </CardContent>
-          <CardHeader>
-            <CardTitle>Nama Akune</CardTitle>
-            <CardDescription>Username</CardDescription>
-          </CardHeader>
-          <CardFooter>
-            <p>sosmed</p>
-          </CardFooter>
-          </Card>
           </div>
         </div>
       </div>
