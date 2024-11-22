@@ -4,7 +4,7 @@ const HomePage = () => {
   return (
     <div className='mt-19'>
       {/* banner utama */}
-      <section className="bg-center bg-no-repeat bg-[url('https://flowbite.s3.amazonaws.com/docs/jumbotron/conference.jpg')] bg-gray-700 bg-blend-multiply">
+      <section className="bg-center bg-no-repeat bg-[url('https://plus.unsplash.com/premium_photo-1700353612860-bd8ab8d71f05?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-gray-700 bg-blend-multiply">
         <div className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
           <h1 className="mb-4 mt-10 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
             Find Your True Lover Now!</h1>
