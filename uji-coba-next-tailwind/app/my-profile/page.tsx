@@ -21,7 +21,7 @@ const page = () => {
                             </div>
                         </div>
                         <div className="relative">
-                            <img className="w-48 h-48 mx-auto rounded-full shadow-2xl absolute inset-x-0 top-0 -mt-24 flex items-center justify-center text-indigo-500" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCHwpU4yyNcyYGp5pbezdyw-LWRj9gi9V19g&s" alt="Highlight People" />
+                            <img className="object-cover w-48 h-48 mx-auto rounded-full shadow-2xl absolute inset-x-0 top-0 -mt-24 flex items-center justify-center text-indigo-500" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCHwpU4yyNcyYGp5pbezdyw-LWRj9gi9V19g&s" alt="Highlight People" />
 
                         </div>
                         <div className="space-x-8 flex justify-between mt-32 md:mt-0 md:justify-center">
