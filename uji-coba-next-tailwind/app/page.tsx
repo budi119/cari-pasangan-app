@@ -169,11 +169,6 @@ const HomePage = () => {
         </div>
       </div>
       {/* end halaman utama */}
-      {/* footer */}
-      <div className='text-center mt-20 mb-10'>
-        <h5 className='text-gray-400'>FindUrLover Copyright 2024 <br />Dibuat oleh Budi & Adit</h5>
-      </div>
-      {/* end footer */}
     </div>
   );
 }
