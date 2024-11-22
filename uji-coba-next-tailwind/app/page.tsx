@@ -1,8 +1,17 @@
 import React from 'react';
+import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardFooter,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card"
+
 
 const HomePage = () => {
   return (
-    <div className='mt-19'>
+    <div className='mt-19 bg-[#FADFA1]'>
       {/* banner utama */}
       <section className="bg-center bg-no-repeat bg-[url('https://plus.unsplash.com/premium_photo-1700353612860-bd8ab8d71f05?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')] bg-gray-700 bg-blend-multiply">
         <div className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
@@ -24,7 +33,7 @@ const HomePage = () => {
       <div className='container mt-20 mb-20 mx-auto'>
         <div className='flex flex-row'>
           <div className="basis-1/2 mx-auto">
-            <div className="w-full max-w-md p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+            <div className="w-full max-w-md p-4 bg-[#FFF4EA] border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
               <div className="flex items-center justify-between mb-4 pr-2">
                 <h5 className="text-xl font-bold leading-none text-gray-900 dark:text-white">Highlight People</h5>
                 <a href="#" className="text-sm font-medium text-blue-600 hover:underline dark:text-blue-500">
@@ -59,14 +68,14 @@ const HomePage = () => {
                   <li className="py-4 sm:py-4">
                     <div className="flex items-center">
                       <div className="flex-shrink-0">
-                        <img className="w-8 h-8 rounded-full" src="https://cdn.idntimes.com/content-images/duniaku/post/20230203/300587459-644512820424460-4842282226378900658-n-1c2be0cf6d19d21f4eceaf315e8f37ea.jpg" alt="Highlight People" />
+                        <img className="w-8 h-8 rounded-full" src="https://th.bing.com/th/id/OIP.5Ww4lig_v4EMipjOv65O2QHaFl?w=214&h=180&c=7&r=0&o=5&pid=1.7" alt="Highlight People" />
                       </div>
                       <div className="flex-1 min-w-0 ms-4">
                         <p className="text-sm font-medium text-gray-900 truncate dark:text-white">
-                          Vonny Felicia
+                        Sheryl Jesslyn
                         </p>
                         <p className="text-sm text-gray-500 truncate dark:text-gray-400">
-                          Hobi Memasak dan tertarik dengan pria SIGMA anjayayyyy
+                          cewenya adit
                         </p>
                       </div>
                       <div>
@@ -83,8 +92,79 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-          <div className="basis-1/8">
-            {/* isi disini pa adit yang kemaren dibuat */}
+          <div className="basis-1/8 grid gap-y-2">
+          <Card className='bg-[#FFF4EA]'>
+            <CardContent className="w-[200px] p-0">
+              <Card className="w-[200px] h-[200px] "><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9zlHyRJdav67jwTgcQ5Mzg-MkCFcpNUT68g&s' className="w-[200px] h-[200px] rounded-sm"></img></Card>
+            </CardContent>
+          <CardHeader>
+            <CardTitle>LORA</CardTitle>
+            <CardDescription>@lauraziphoraa</CardDescription>
+          </CardHeader>
+          <CardFooter>
+            <p>sosmed</p>
+          </CardFooter>
+          </Card>
+          <Card>
+            <CardContent className="w-[200px] p-0">
+              <Card className="w-[200px] h-[200px] ">Foto</Card>
+            </CardContent>
+          <CardHeader>
+            <CardTitle>Nama Akune</CardTitle>
+            <CardDescription>Username</CardDescription>
+          </CardHeader>
+          <CardFooter>
+            <p>sosmed</p>
+          </CardFooter>
+          </Card>
+          <Card>
+            <CardContent className="w-[200px] p-0">
+              <Card className="w-[200px] h-[200px] ">Foto</Card>
+            </CardContent>
+          <CardHeader>
+            <CardTitle>Nama Akune</CardTitle>
+            <CardDescription>Username</CardDescription>
+          </CardHeader>
+          <CardFooter>
+            <p>sosmed</p>
+          </CardFooter>
+          </Card>
+          <Card>
+            <CardContent className="w-[200px] p-0">
+              <Card className="w-[200px] h-[200px] ">Foto</Card>
+            </CardContent>
+          <CardHeader>
+            <CardTitle>Nama Akune</CardTitle>
+            <CardDescription>Username</CardDescription>
+          </CardHeader>
+          <CardFooter>
+            <p>sosmed</p>
+          </CardFooter>
+          </Card>
+          <Card>
+            <CardContent className="w-[200px] p-0">
+              <Card className="w-[200px] h-[200px] ">Foto</Card>
+            </CardContent>
+          <CardHeader>
+            <CardTitle>Nama Akune</CardTitle>
+            <CardDescription>Username</CardDescription>
+          </CardHeader>
+          <CardFooter>
+            <p>sosmed</p>
+          </CardFooter>
+          </Card>
+          <Card>
+            <CardContent className="w-[200px] p-0">
+              <Card className="w-[200px] h-[200px] ">Foto</Card>
+            </CardContent>
+          <CardHeader>
+            <CardTitle>Nama Akune</CardTitle>
+            <CardDescription>Username</CardDescription>
+          </CardHeader>
+          <CardFooter>
+            <p>sosmed</p>
+          </CardFooter>
+          </Card>
           </div>
         </div>
       </div>
