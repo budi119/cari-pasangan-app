@@ -34,18 +34,22 @@ const HomePage = () => {
       <div className='container grid sm:grid-cols-[4fr_1fr] grid-cols-1 my-auto mx-auto'>
         <div className="flex justify-center items-center mt-10 mb-10">
           <div className='grid sm:grid-cols-4 grid-cols-2 gap-4'>
-            <CardUser nama="LORA" username="@lauraziphoraa" foto='/lora.jpg'/>
-            <CardUser nama="Chelsea" username="@cesiann" foto='/cesian.jpg' />
-            <CardUser nama="Anin" username="@anin.dhitaa" foto='/anin.jpg' />
-            <CardUser nama="Cila" username="@kynchllaalexa" foto='/cila.jpg' />
-            <CardUser nama="LORA" username="@lauraziphoraa" foto='/lora.jpg'/>
-            <CardUser nama="Chelsea" username="@cesiann" foto='/cesian.jpg' />
-            <CardUser nama="Anin" username="@anin.dhitaa" foto='/anin.jpg' />
-            <CardUser nama="Cila" username="@kynchllaalexa" foto='/cila.jpg' />
-            <CardUser nama="LORA" username="@lauraziphoraa" foto='/lora.jpg'/>
-            <CardUser nama="Chelsea" username="@cesiann" foto='/cesian.jpg' />
-            <CardUser nama="Anin" username="@anin.dhitaa" foto='/anin.jpg' />
-            <CardUser nama="Cila" username="@kynchllaalexa" foto='/cila.jpg' />
+            <CardUser nama="Lora" username="@lauraziphoraa" foto='/talent/lora.jpg'/>
+            <CardUser nama="Chelsea" username="@cesiann" foto='/talent/cesian.jpg' />
+            <CardUser nama="Anin" username="@anin.dhitaa" foto='/talent/anin.jpg' />
+            <CardUser nama="Cila" username="@kynchllaalexa" foto='/talent/cila.jpg' />
+            <CardUser nama="Aldean" username="@aldean.tg" foto='/talent/dean.jpg'/>
+            <CardUser nama="Kevin" username="@kevinsusanto" foto='/talent/kevin.jpg' />
+            <CardUser nama="L" username="@luthfihalimawan" foto='/talent/L.png' />
+            <CardUser nama="Kairi" username="@kairirds" foto='/talent/kai.jpg' />
+            <CardUser nama="LORA" username="@lauraziphoraa" foto='/talent/lora.jpg'/>
+            <CardUser nama="Chelsea" username="@cesiann" foto='/talent/cesian.jpg' />
+            <CardUser nama="Anin" username="@anin.dhitaa" foto='/talent/anin.jpg' />
+            <CardUser nama="Cila" username="@kynchllaalexa" foto='/talent/cila.jpg' />
+            <CardUser nama="Aldean" username="@aldean.tg" foto='/talent/dean.jpg'/>
+            <CardUser nama="Kevin" username="@kevinsusanto" foto='/talent/kevin.jpg' />
+            <CardUser nama="L" username="@luthfihalimawan" foto='/talent/L.png' />
+            <CardUser nama="Kairi" username="@kairirds" foto='/talent/kai.jpg' />
           </div>
 
         </div>
@@ -92,7 +96,7 @@ const HomePage = () => {
                         Sheryl Jesslyn
                       </p>
                       <p className="text-sm text-gray-500 truncate dark:text-gray-400">
-                        cewenya adit
+                        Cewenya kairi accu
                       </p>
                     </div>
                     <div>
