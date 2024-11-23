@@ -34,22 +34,22 @@ const HomePage = () => {
       <div className='container grid sm:grid-cols-[4fr_1fr] grid-cols-1 my-auto mx-auto'>
         <div className="flex justify-center items-center mt-10 mb-10">
           <div className='grid sm:grid-cols-4 grid-cols-2 gap-4'>
-            <CardUser nama="Lora" username="@lauraziphoraa" foto='/talent/lora.jpg'/>
-            <CardUser nama="Chelsea" username="@cesiann" foto='/talent/cesian.jpg' />
-            <CardUser nama="Anin" username="@anin.dhitaa" foto='/talent/anin.jpg' />
-            <CardUser nama="Cila" username="@kynchllaalexa" foto='/talent/cila.jpg' />
-            <CardUser nama="Aldean" username="@aldean.tg" foto='/talent/dean.jpg'/>
-            <CardUser nama="Kevin" username="@kevinsusanto" foto='/talent/kevin.jpg' />
-            <CardUser nama="L" username="@luthfihalimawan" foto='/talent/L.png' />
-            <CardUser nama="Kairi" username="@kairirds" foto='/talent/kai.jpg' />
-            <CardUser nama="LORA" username="@lauraziphoraa" foto='/talent/lora.jpg'/>
-            <CardUser nama="Chelsea" username="@cesiann" foto='/talent/cesian.jpg' />
-            <CardUser nama="Anin" username="@anin.dhitaa" foto='/talent/anin.jpg' />
-            <CardUser nama="Cila" username="@kynchllaalexa" foto='/talent/cila.jpg' />
-            <CardUser nama="Aldean" username="@aldean.tg" foto='/talent/dean.jpg'/>
-            <CardUser nama="Kevin" username="@kevinsusanto" foto='/talent/kevin.jpg' />
-            <CardUser nama="L" username="@luthfihalimawan" foto='/talent/L.png' />
-            <CardUser nama="Kairi" username="@kairirds" foto='/talent/kai.jpg' />
+            <CardUser nama="Lora" username="@lauraziphoraa" foto='/talent/lora.jpg' ig='https://www.instagram.com/lauraziphoraa/' tt='https://www.tiktok.com/@lauraziphoraa'/>
+            <CardUser nama="Chelsea" username="@cesiann" foto='/talent/cesian.jpg' ig='https://www.instagram.com/cesiann/' tt='https://www.tiktok.com/@cesiann'/>
+            <CardUser nama="Anin" username="@anin.dhitaa" foto='/talent/anin.jpg' ig='https://www.instagram.com/aanin.dithaa/' tt='https://www.tiktok.com/@anindthrc'/>
+            <CardUser nama="Cila" username="@kynchllaalexa" foto='/talent/cila.jpg' ig='https://www.instagram.com/kynchllaalexa/' tt='https://www.tiktok.com/@kynchilla'/>
+            <CardUser nama="Aldean" username="@aldean.tg" foto='/talent/dean.jpg' ig='https://www.instagram.com/aldeantg/' tt='https://www.tiktok.com/@aldeantg'/>
+            <CardUser nama="Kevin" username="@kevinsusanto" foto='/talent/kevin.jpg' ig='https://www.instagram.com/xccuratevlr/' tt='https://www.tiktok.com/@xccuratevlr'/>
+            <CardUser nama="L" username="@luthfihalimawan" foto='/talent/L.png' ig='https://www.instagram.com/luthfihalimawan/' tt='https://www.tiktok.com/@luthfi_halimawan'/>
+            <CardUser nama="Kairi" username="@kairirds" foto='/talent/kai.jpg' ig='https://www.instagram.com/kairirds/' tt='https://www.tiktok.com/@kairirisolmayo'/>
+            <CardUser nama="Lora" username="@lauraziphoraa" foto='/talent/lora.jpg' ig='https://www.instagram.com/lauraziphoraa/' tt='https://www.tiktok.com/@lauraziphoraa'/>
+            <CardUser nama="Chelsea" username="@cesiann" foto='/talent/cesian.jpg' ig='https://www.instagram.com/cesiann/' tt='https://www.tiktok.com/@cesiann'/>
+            <CardUser nama="Anin" username="@anin.dhitaa" foto='/talent/anin.jpg' ig='https://www.instagram.com/aanin.dithaa/' tt='https://www.tiktok.com/@anindthrc'/>
+            <CardUser nama="Cila" username="@kynchllaalexa" foto='/talent/cila.jpg' ig='https://www.instagram.com/kynchllaalexa/' tt='https://www.tiktok.com/@kynchilla'/>
+            <CardUser nama="Aldean" username="@aldean.tg" foto='/talent/dean.jpg' ig='https://www.instagram.com/aldeantg/' tt='https://www.tiktok.com/@aldeantg'/>
+            <CardUser nama="Kevin" username="@kevinsusanto" foto='/talent/kevin.jpg' ig='https://www.instagram.com/xccuratevlr/' tt='https://www.tiktok.com/@xccuratevlr'/>
+            <CardUser nama="L" username="@luthfihalimawan" foto='/talent/L.png' ig='https://www.instagram.com/luthfihalimawan/' tt='https://www.tiktok.com/@luthfi_halimawan'/>
+            <CardUser nama="Kairi" username="@kairirds" foto='/talent/kai.jpg' ig='https://www.instagram.com/kairirds/' tt='https://www.tiktok.com/@kairirisolmayo'/>
           </div>
 
         </div>
