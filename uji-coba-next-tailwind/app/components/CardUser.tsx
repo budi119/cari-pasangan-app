@@ -25,7 +25,7 @@ const CardUser = ({
   tt,
 }: CardUserProps) => {
   return (
-    <Card className="bg-[#FFF4EA] w-[200px]">
+    <Card className="bg-[#FFF4EA] w-[202px]">
       <CardContent className="w-[200px] p-0">
         <Card className="w-[200px] h-[200px] object-cover">
           <Image
