@@ -32,7 +32,7 @@ const HomePage = () => {
       {/* halaman utama */}
       <div className='container grid sm:grid-cols-[4fr_1fr] grid-cols-1 my-auto mx-auto'>
         <div className="flex justify-center items-center mt-10 mb-10">
-          <div className='grid sm:grid-cols-5 grid-cols-2 gap-4'>
+          <div className='grid sm:grid-cols-4 grid-cols-2 gap-4'>
             <Card className='bg-[#FFF4EA]'>
               <CardContent className="w-[200px] p-0">
                 <Card className="w-[200px] h-[200px] "><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9zlHyRJdav67jwTgcQ5Mzg-MkCFcpNUT68g&s' className="w-[200px] h-[200px] rounded-sm object-cover"></img></Card>
