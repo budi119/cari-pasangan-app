@@ -1,4 +1,5 @@
 import React from 'react';
+import CardUser from './components/CardUser';
 import {
   Card,
   CardContent,
@@ -33,102 +34,22 @@ const HomePage = () => {
       <div className='container grid sm:grid-cols-[4fr_1fr] grid-cols-1 my-auto mx-auto'>
         <div className="flex justify-center items-center mt-10 mb-10">
           <div className='grid sm:grid-cols-4 grid-cols-2 gap-4'>
-            <Card className='bg-[#FFF4EA]'>
-              <CardContent className="w-[200px] p-0">
-                <Card className="w-[200px] h-[200px] "><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9zlHyRJdav67jwTgcQ5Mzg-MkCFcpNUT68g&s' className="w-[200px] h-[200px] rounded-sm object-cover"></img></Card>
-              </CardContent>
-              <CardHeader>
-                <CardTitle>LORA</CardTitle>
-                <CardDescription>@lauraziphoraa</CardDescription>
-              </CardHeader>
-              <CardFooter>
-                <p>sosmed</p>
-              </CardFooter>
-            </Card>
-            <Card className='bg-[#FFF4EA]'>
-              <CardContent className="w-[200px] p-0">
-                <Card className="w-[200px] h-[200px] "><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9zlHyRJdav67jwTgcQ5Mzg-MkCFcpNUT68g&s' className="w-[200px] h-[200px] rounded-sm object-cover"></img></Card>
-              </CardContent>
-              <CardHeader>
-                <CardTitle>LORA</CardTitle>
-                <CardDescription>@lauraziphoraa</CardDescription>
-              </CardHeader>
-              <CardFooter>
-                <p>sosmed</p>
-              </CardFooter>
-            </Card>
-            <Card className='bg-[#FFF4EA]'>
-              <CardContent className="w-[200px] p-0">
-                <Card className="w-[200px] h-[200px] "><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9zlHyRJdav67jwTgcQ5Mzg-MkCFcpNUT68g&s' className="w-[200px] h-[200px] rounded-sm object-cover"></img></Card>
-              </CardContent>
-              <CardHeader>
-                <CardTitle>LORA</CardTitle>
-                <CardDescription>@lauraziphoraa</CardDescription>
-              </CardHeader>
-              <CardFooter>
-                <p>sosmed</p>
-              </CardFooter>
-            </Card>
-            <Card className='bg-[#FFF4EA]'>
-              <CardContent className="w-[200px] p-0">
-                <Card className="w-[200px] h-[200px] "><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9zlHyRJdav67jwTgcQ5Mzg-MkCFcpNUT68g&s' className="w-[200px] h-[200px] rounded-sm object-cover"></img></Card>
-              </CardContent>
-              <CardHeader>
-                <CardTitle>LORA</CardTitle>
-                <CardDescription>@lauraziphoraa</CardDescription>
-              </CardHeader>
-              <CardFooter>
-                <p>sosmed</p>
-              </CardFooter>
-            </Card>
-            <Card className='bg-[#FFF4EA]'>
-              <CardContent className="w-[200px] p-0">
-                <Card className="w-[200px] h-[200px] "><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9zlHyRJdav67jwTgcQ5Mzg-MkCFcpNUT68g&s' className="w-[200px] h-[200px] rounded-sm object-cover"></img></Card>
-              </CardContent>
-              <CardHeader>
-                <CardTitle>LORA</CardTitle>
-                <CardDescription>@lauraziphoraa</CardDescription>
-              </CardHeader>
-              <CardFooter>
-                <p>sosmed</p>
-              </CardFooter>
-            </Card>
-            <Card className='bg-[#FFF4EA]'>
-              <CardContent className="w-[200px] p-0">
-                <Card className="w-[200px] h-[200px] "><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9zlHyRJdav67jwTgcQ5Mzg-MkCFcpNUT68g&s' className="w-[200px] h-[200px] rounded-sm object-cover"></img></Card>
-              </CardContent>
-              <CardHeader>
-                <CardTitle>LORA</CardTitle>
-                <CardDescription>@lauraziphoraa</CardDescription>
-              </CardHeader>
-              <CardFooter>
-                <p>sosmed</p>
-              </CardFooter>
-            </Card>
-            <Card className='bg-[#FFF4EA]'>
-              <CardContent className="w-[200px] p-0">
-                <Card className="w-[200px] h-[200px] "><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9zlHyRJdav67jwTgcQ5Mzg-MkCFcpNUT68g&s' className="w-[200px] h-[200px] rounded-sm object-cover"></img></Card>
-              </CardContent>
-              <CardHeader>
-                <CardTitle>LORA</CardTitle>
-                <CardDescription>@lauraziphoraa</CardDescription>
-              </CardHeader>
-              <CardFooter>
-                <p>sosmed</p>
-              </CardFooter>
-            </Card>
-            <Card className='bg-[#FFF4EA]'>
-              <CardContent className="w-[200px] p-0">
-                <Card className="w-[200px] h-[200px] "><img src='https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9zlHyRJdav67jwTgcQ5Mzg-MkCFcpNUT68g&s' className="w-[200px] h-[200px] rounded-sm object-cover"></img></Card>
-              </CardContent>
-              <CardHeader>
-                <CardTitle>LORA</CardTitle>
-                <CardDescription>@lauraziphoraa</CardDescription>
-              </CardHeader>
-              <CardFooter>
-                <p>sosmed</p>
-              </CardFooter>
-            </Card>
+            <CardUser nama="Lora" username="@lauraziphoraa" foto='/talent/lora.jpg' />
+            <CardUser nama="Chelsea" username="@cesiann" foto='/talent/cesian.jpg' />
+            <CardUser nama="Anin" username="@anin.dhitaa" foto='/talent/anin.jpg' />
+            <CardUser nama="Cila" username="@kynchllaalexa" foto='/talent/cila.jpg' />
+            <CardUser nama="Aldean" username="@aldean.tg" foto='/talent/dean.jpg' />
+            <CardUser nama="Kevin" username="@kevinsusanto" foto='/talent/kevin.jpg' />
+            <CardUser nama="L" username="@luthfihalimawan" foto='/talent/L.png' />
+            <CardUser nama="Kairi" username="@kairirds" foto='/talent/kai.jpg' />
+            <CardUser nama="LORA" username="@lauraziphoraa" foto='/talent/lora.jpg' />
+            <CardUser nama="Chelsea" username="@cesiann" foto='/talent/cesian.jpg' />
+            <CardUser nama="Anin" username="@anin.dhitaa" foto='/talent/anin.jpg' />
+            <CardUser nama="Cila" username="@kynchllaalexa" foto='/talent/cila.jpg' />
+            <CardUser nama="Aldean" username="@aldean.tg" foto='/talent/dean.jpg' />
+            <CardUser nama="Kevin" username="@kevinsusanto" foto='/talent/kevin.jpg' />
+            <CardUser nama="L" username="@luthfihalimawan" foto='/talent/L.png' />
+            <CardUser nama="Kairi" username="@kairirds" foto='/talent/kai.jpg' />
           </div>
 
         </div>
@@ -175,7 +96,7 @@ const HomePage = () => {
                         Sheryl Jesslyn
                       </p>
                       <p className="text-sm text-gray-500 truncate dark:text-gray-400">
-                        cewenya adit
+                        Cewenya kairi accu
                       </p>
                     </div>
                     <div>
