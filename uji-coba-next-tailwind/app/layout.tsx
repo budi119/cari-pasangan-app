@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
-import Navbar from "./components/Navbar";
+import Navbar from "../components/ui/Navbar";
 import "./globals.css";
 
 const geistSans = localFont({
@@ -27,13 +27,13 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} antialiased bg-yellowplt`}
       >
         <Navbar></Navbar>
         {children}
         {/* footer */}
         <div className='text-center mt-20 mb-10'>
-          <h5 className='text-gray-400'>FindUrLover Copyright 2024 <br />Dibuat oleh Budi & Adhyt</h5>
+          <h5 className='text-blueplt font-semibold'>FindUrLover Copyright 2024 <br />Dibuat oleh Budi & Adhyt</h5>
         </div>
         {/* end footer */}
       </body>

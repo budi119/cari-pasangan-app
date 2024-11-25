@@ -25,7 +25,7 @@ const CardUser = ({
   tt,
 }: CardUserProps) => {
   return (
-    <Card className="bg-[#FFF4EA] w-[202px]">
+    <Card className="bg-white w-[202px] border-gray-200 ">
       <CardContent className="w-[200px] p-0">
         <Card className="w-[200px] h-[200px] object-cover">
           <Image
@@ -46,7 +46,7 @@ const CardUser = ({
           {/* Instagram link */}
           {ig && (
             <a href={ig} target="_blank" rel="noopener noreferrer">
-              <img src="/ig.ico" className="w-5 h-5" alt="Instagram" />
+              <Image src="/ig.ico" className="w-5 h-5" alt="Instagram" width={20} height={20} />
             </a>
           )}
         </div>
@@ -54,7 +54,7 @@ const CardUser = ({
           {/* TikTok link */}
           {tt && (
             <a href={tt} target="_blank" rel="noopener noreferrer">
-              <img src="/tt.ico" className="w-5 h-5" alt="TikTok" />
+              <Image src="/tt.ico" className="w-5 h-5" alt="TikTok" width={20} height={20} />
             </a>
           )}
         </div>
