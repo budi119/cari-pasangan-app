@@ -31,7 +31,7 @@ const HomePage = () => {
               </a>
             </div>
             <div className="flow-root">
-              <div className='grid sm:grid-cols-5 grid-cols-2 gap-4'>
+              <div className='grid sm:grid-cols-6 grid-cols-2 gap-4'>
                 <CardUser nama="Lora" username="@lauraziphoraa" foto='/talent/lora.jpg' ig='https://www.instagram.com/lauraziphoraa/' tt='https://www.tiktok.com/@lauraziphoraa' />
                 <CardUser nama="Chelsea" username="@cesiann" foto='/talent/cesian.jpg' ig='https://www.instagram.com/cesiann/' tt='https://www.tiktok.com/@cesiann' />
                 <CardUser nama="Anin" username="@anin.dhitaa" foto='/talent/anin.jpg' ig='https://www.instagram.com/aanin.dithaa/' tt='https://www.tiktok.com/@anindthrc' />
