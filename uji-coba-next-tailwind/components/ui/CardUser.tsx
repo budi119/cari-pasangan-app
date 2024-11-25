@@ -12,9 +12,9 @@ import React from "react";
 interface CardUserProps {
   nama?: string;
   username?: string;
-  foto: string; // Properti untuk gambar profil
-  ig?: string; // Properti untuk URL Instagram
-  tt?: string; // Properti untuk URL TikTok
+  foto: string;
+  ig?: string;
+  tt?: string;
 }
 
 const CardUser = ({
@@ -25,25 +25,24 @@ const CardUser = ({
   tt,
 }: CardUserProps) => {
   return (
-    <Card className="bg-white w-[152px] border-gray-200 ">
-      <CardContent className="w-[150px] p-0">
-        <Card className="w-[150px] h-[150px] object-cover">
+    <Card className="bg-white border-gray-200">
+      <CardContent className="w-full p-0">
+        <div className="w-full h-[150px] sm:h-[180px] md:h-[200px]">
           <Image
             src={foto}
             width={200}
             height={200}
             alt={`${nama || "User"}'s profile`}
-            className="rounded-lg"
+            className="rounded-lg object-cover w-full h-full"
           />
-        </Card>
+        </div>
       </CardContent>
       <CardHeader>
         <CardTitle>{nama}</CardTitle>
         <CardDescription>{username}</CardDescription>
       </CardHeader>
-      <CardFooter className="grid sm:grid-cols-2">
+      <CardFooter className="grid sm:grid-cols-2 gap-2">
         <div className="flex justify-center">
-          {/* Instagram link */}
           {ig && (
             <a href={ig} target="_blank" rel="noopener noreferrer">
               <Image src="/ig.ico" className="w-5 h-5" alt="Instagram" width={20} height={20} />
@@ -51,7 +50,6 @@ const CardUser = ({
           )}
         </div>
         <div className="flex justify-center">
-          {/* TikTok link */}
           {tt && (
             <a href={tt} target="_blank" rel="noopener noreferrer">
               <Image src="/tt.ico" className="w-5 h-5" alt="TikTok" width={20} height={20} />

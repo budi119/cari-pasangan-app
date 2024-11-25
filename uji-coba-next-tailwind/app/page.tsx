@@ -1,6 +1,6 @@
 import React from 'react';
 import CardUser from '../components/ui/CardUser';
-import People from '../components/ui/People';
+import People from '../components/ui/HighlightPeople';
 
 
 const HomePage = () => {
@@ -21,8 +21,8 @@ const HomePage = () => {
       </section>
       {/* end banner utama */}
       {/* halaman utama */}
-      <div className='container grid sm:grid-cols-[4fr_1fr] grid-cols-1 my-auto mx-auto'>
-        <div className="flex justify-center items-center mt-10 mb-10">
+      <div className='container grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-[4fr_1fr] my-auto mx-auto'>
+        <div className="flex justify-center items-center mt-10 mb-10 px-4 md:px-0 lg:px-0 ">
           <div className="w-full max-w-full p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
             <div className="flex items-center justify-between mb-8 pr-2">
               <h5 className="text-xl font-bold leading-none text-gray-900 dark:text-white">People Might You Like</h5>
@@ -31,7 +31,7 @@ const HomePage = () => {
               </a>
             </div>
             <div className="flow-root">
-              <div className='grid sm:grid-cols-6 grid-cols-2 gap-4'>
+              <div className='grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4'>
                 <CardUser nama="Lora" username="@lauraziphoraa" foto='/talent/lora.jpg' ig='https://www.instagram.com/lauraziphoraa/' tt='https://www.tiktok.com/@lauraziphoraa' />
                 <CardUser nama="Chelsea" username="@cesiann" foto='/talent/cesian.jpg' ig='https://www.instagram.com/cesiann/' tt='https://www.tiktok.com/@cesiann' />
                 <CardUser nama="Anin" username="@anin.dhitaa" foto='/talent/anin.jpg' ig='https://www.instagram.com/aanin.dithaa/' tt='https://www.tiktok.com/@anindthrc' />
@@ -51,9 +51,8 @@ const HomePage = () => {
               </div>
             </div>
           </div>
-
         </div>
-        <div className="flex justify-center items-start sm:ml-5 mt-10 mb-10">
+        <div className="flex justify-center items-start sm:ml-5 mt-0 md:mt-10 lg:mt-10 mb-10">
           <div className="w-full max-w-md p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
             <div className="flex items-center justify-between mb-4 pr-2">
               <h5 className="text-xl font-bold leading-none text-gray-900 dark:text-white">Highlight People</h5>
@@ -71,7 +70,6 @@ const HomePage = () => {
             </div>
           </div>
         </div>
-
       </div>
       {/* end halaman utama */}
     </div>
