@@ -15,6 +15,7 @@ interface CardUserProps {
   foto: string;
   ig?: string;
   tt?: string;
+  line?: string;
 }
 
 const CardUser = ({
@@ -23,6 +24,7 @@ const CardUser = ({
   foto,
   ig,
   tt,
+  line,
 }: CardUserProps) => {
   return (
     <Card className="bg-white border-gray-200">
@@ -42,17 +44,39 @@ const CardUser = ({
         <CardDescription>{username}</CardDescription>
       </CardHeader>
       <CardFooter className="grid sm:grid-cols-2 gap-2">
-        <div className="flex justify-center">
+        <div className="flex justify-start">
           {ig && (
-            <a href={ig} target="_blank" rel="noopener noreferrer">
-              <Image src="/ig.ico" className="w-5 h-5" alt="Instagram" width={20} height={20} />
+            <a href={ig} target="_blank" rel="noopener noreferrer" className="group">
+              <Image
+                src="/ig.ico"
+                className="w-5 h-5 mr-3 transition-transform duration-300 ease-in-out hover:scale-110"
+                alt="Instagram"
+                width={20}
+                height={20}
+              />
             </a>
+
           )}
-        </div>
-        <div className="flex justify-center">
           {tt && (
             <a href={tt} target="_blank" rel="noopener noreferrer">
-              <Image src="/tt.ico" className="w-5 h-5" alt="TikTok" width={20} height={20} />
+              <Image
+                src="/tt.ico"
+                className="w-5 h-5 mr-3 transition-transform duration-300 ease-in-out hover:scale-110" // Menambahkan kelas hover untuk efek zoom
+                alt="TikTok"
+                width={20}
+                height={20}
+              />
+            </a>
+          )}
+          {line && (
+            <a href={line} target="_blank" rel="noopener noreferrer">
+              <Image
+                src="/line.ico"
+                className="w-5 h-5 transition-transform duration-300 ease-in-out hover:scale-110" // Menambahkan kelas hover untuk efek zoom
+                alt="TikTok"
+                width={20}
+                height={20}
+              />
             </a>
           )}
         </div>

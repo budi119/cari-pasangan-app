@@ -31,23 +31,23 @@ const HomePage = () => {
               </a>
             </div>
             <div className="flow-root">
-              <div className='grid sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-4'>
-                <CardUser nama="Lora" username="@lauraziphoraa" foto='/talent/lora.jpg' ig='https://www.instagram.com/lauraziphoraa/' tt='https://www.tiktok.com/@lauraziphoraa' />
-                <CardUser nama="Chelsea" username="@cesiann" foto='/talent/cesian.jpg' ig='https://www.instagram.com/cesiann/' tt='https://www.tiktok.com/@cesiann' />
-                <CardUser nama="Anin" username="@anin.dhitaa" foto='/talent/anin.jpg' ig='https://www.instagram.com/aanin.dithaa/' tt='https://www.tiktok.com/@anindthrc' />
-                <CardUser nama="Cila" username="@kynchllaalexa" foto='/talent/cila.jpg' ig='https://www.instagram.com/kynchllaalexa/' tt='https://www.tiktok.com/@kynchilla' />
-                <CardUser nama="Aldean" username="@aldean.tg" foto='/talent/dean.jpg' ig='https://www.instagram.com/aldeantg/' tt='https://www.tiktok.com/@aldeantg' />
-                <CardUser nama="Kevin" username="@kevinsusanto" foto='/talent/kevin.jpg' ig='https://www.instagram.com/xccuratevlr/' tt='https://www.tiktok.com/@xccuratevlr' />
-                <CardUser nama="L" username="@luthfihalimawan" foto='/talent/L.png' ig='https://www.instagram.com/luthfihalimawan/' tt='https://www.tiktok.com/@luthfi_halimawan' />
-                <CardUser nama="Kairi" username="@kairirds" foto='/talent/kairi.jpg' ig='https://www.instagram.com/kairirds/' tt='https://www.tiktok.com/@kairirisolmayo' />
-                <CardUser nama="Lora" username="@lauraziphoraa" foto='/talent/lora.jpg' ig='https://www.instagram.com/lauraziphoraa/' tt='https://www.tiktok.com/@lauraziphoraa' />
-                <CardUser nama="Chelsea" username="@cesiann" foto='/talent/cesian.jpg' ig='https://www.instagram.com/cesiann/' tt='https://www.tiktok.com/@cesiann' />
-                <CardUser nama="Anin" username="@anin.dhitaa" foto='/talent/anin.jpg' ig='https://www.instagram.com/aanin.dithaa/' tt='https://www.tiktok.com/@anindthrc' />
-                <CardUser nama="Cila" username="@kynchllaalexa" foto='/talent/cila.jpg' ig='https://www.instagram.com/kynchllaalexa/' tt='https://www.tiktok.com/@kynchilla' />
-                <CardUser nama="Aldean" username="@aldean.tg" foto='/talent/dean.jpg' ig='https://www.instagram.com/aldeantg/' tt='https://www.tiktok.com/@aldeantg' />
-                <CardUser nama="Kevin" username="@kevinsusanto" foto='/talent/kevin.jpg' ig='https://www.instagram.com/xccuratevlr/' tt='https://www.tiktok.com/@xccuratevlr' />
-                <CardUser nama="L" username="@luthfihalimawan" foto='/talent/L.png' ig='https://www.instagram.com/luthfihalimawan/' tt='https://www.tiktok.com/@luthfi_halimawan' />
-                <CardUser nama="Kairi" username="@kairirds" foto='/talent/kairi.jpg' ig='https://www.instagram.com/kairirds/' tt='https://www.tiktok.com/@kairirisolmayo' />
+              <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-3 xl:grid-cols-4 gap-4'>
+                <CardUser nama="Lora" username="@lauraziphoraa" foto='/talent/lora.jpg' ig='https://www.instagram.com/lauraziphoraa/' tt='https://www.tiktok.com/@lauraziphoraa' line='line' />
+                <CardUser nama="Chelsea" username="@cesiann" foto='/talent/cesian.jpg' ig='https://www.instagram.com/cesiann/' tt='https://www.tiktok.com/@cesiann' line='line' />
+                <CardUser nama="Anin" username="@anin.dhitaa" foto='/talent/anin.jpg' ig='https://www.instagram.com/aanin.dithaa/' tt='https://www.tiktok.com/@anindthrc' line='line' />
+                <CardUser nama="Cila" username="@kynchllaalexa" foto='/talent/cila.jpg' ig='https://www.instagram.com/kynchllaalexa/' tt='https://www.tiktok.com/@kynchilla' line='line' />
+                <CardUser nama="Aldean" username="@aldean.tg" foto='/talent/dean.jpg' ig='https://www.instagram.com/aldeantg/' tt='https://www.tiktok.com/@aldeantg' line='line' />
+                <CardUser nama="Kevin" username="@kevinsusanto" foto='/talent/kevin.jpg' ig='https://www.instagram.com/xccuratevlr/' tt='https://www.tiktok.com/@xccuratevlr' line='line' />
+                <CardUser nama="L" username="@luthfihalimawan" foto='/talent/L.png' ig='https://www.instagram.com/luthfihalimawan/' tt='https://www.tiktok.com/@luthfi_halimawan' line='line' />
+                <CardUser nama="Kairi" username="@kairirds" foto='/talent/kairi.jpg' ig='https://www.instagram.com/kairirds/' tt='https://www.tiktok.com/@kairirisolmayo' line='line' />
+                <CardUser nama="Lora" username="@lauraziphoraa" foto='/talent/lora.jpg' ig='https://www.instagram.com/lauraziphoraa/' tt='https://www.tiktok.com/@lauraziphoraa' line='line' />
+                <CardUser nama="Chelsea" username="@cesiann" foto='/talent/cesian.jpg' ig='https://www.instagram.com/cesiann/' tt='https://www.tiktok.com/@cesiann' line='line' />
+                <CardUser nama="Anin" username="@anin.dhitaa" foto='/talent/anin.jpg' ig='https://www.instagram.com/aanin.dithaa/' tt='https://www.tiktok.com/@anindthrc' line='line' />
+                <CardUser nama="Cila" username="@kynchllaalexa" foto='/talent/cila.jpg' ig='https://www.instagram.com/kynchllaalexa/' tt='https://www.tiktok.com/@kynchilla' line='line' />
+                <CardUser nama="Aldean" username="@aldean.tg" foto='/talent/dean.jpg' ig='https://www.instagram.com/aldeantg/' tt='https://www.tiktok.com/@aldeantg' line='line' />
+                <CardUser nama="Kevin" username="@kevinsusanto" foto='/talent/kevin.jpg' ig='https://www.instagram.com/xccuratevlr/' tt='https://www.tiktok.com/@xccuratevlr' line='line' />
+                <CardUser nama="L" username="@luthfihalimawan" foto='/talent/L.png' ig='https://www.instagram.com/luthfihalimawan/' tt='https://www.tiktok.com/@luthfi_halimawan' line='line' />
+                <CardUser nama="Kairi" username="@kairirds" foto='/talent/kairi.jpg' ig='https://www.instagram.com/kairirds/' tt='https://www.tiktok.com/@kairirisolmayo' line='line' />
               </div>
             </div>
           </div>
