@@ -12,6 +12,7 @@ import React from "react";
 interface CardUserProps {
   nama?: string;
   username?: string;
+  deskSingkat?: string;
   foto: string;
   ig?: string;
   tt?: string;
@@ -21,13 +22,14 @@ interface CardUserProps {
 const CardUser = ({
   nama,
   username,
+  deskSingkat,
   foto,
   ig,
   tt,
   line,
 }: CardUserProps) => {
   return (
-    <Card className="bg-white border-gray-200">
+    <Card className="bg-white border-gray-200 transition-transform duration-300 ease-in-out hover:scale-105">
       <CardContent className="w-full p-0">
         <div className="w-full h-[150px] sm:h-[180px] md:h-[200px]">
           <Image
@@ -41,7 +43,10 @@ const CardUser = ({
       </CardContent>
       <CardHeader>
         <CardTitle>{nama}</CardTitle>
-        <CardDescription>{username}</CardDescription>
+        <CardDescription>
+          <p>{username}</p>
+          <p className="mt-1">{deskSingkat}</p>
+        </CardDescription>
       </CardHeader>
       <CardFooter className="grid sm:grid-cols-2 gap-2">
         <div className="flex justify-start">
