@@ -8,15 +8,15 @@ const page = () => {
                     <div className="grid grid-cols-1 md:grid-cols-3">
                         <div className="grid grid-cols-3 text-center order-last md:order-first mt-20 md:mt-0">
                             <div>
-                                <p className="font-bold text-gray-700 text-xl">22</p>
+                                <p className="font-bold text-gray-700 text-xl">7663</p>
                                 <p className="text-gray-400">Visits</p>
                             </div>
                             <div>
-                                <p className="font-bold text-gray-700 text-xl">10</p>
+                                <p className="font-bold text-gray-700 text-xl">8630</p>
                                 <p className="text-gray-400">View</p>
                             </div>
                             <div>
-                                <p className="font-bold text-gray-700 text-xl">89</p>
+                                <p className="font-bold text-gray-700 text-xl">55,239</p>
                                 <p className="text-gray-400">Likes</p>
                             </div>
                         </div>
@@ -36,7 +36,7 @@ const page = () => {
                         <p className="mt-2 text-gray-500">+62 0821 6666 6666</p>
                     </div>
                     <div className="mt-12 flex flex-col justify-center">
-                        <p className="text-gray-600 text-center font-light lg:px-16">Saya berkiprah di dunia esports, saya memiliki banyak talenta lain seperti bernyanyi, modelling, dan bahkan berakting. Saya pernah membintangi film layar lebar serta tampil di podcast populer bersama tokoh-tokoh seperti Jonathan Liandi. Sayajuga memiliki adik, Sheryl Jesslyn (Sze), yang juga aktif sebagai brand ambassador esports.</p>
+                        <p className="text-gray-600 text-center font-light lg:px-16">Saya berkiprah di dunia esports, saya memiliki banyak talenta lain seperti bernyanyi, modelling, dan bahkan berakting. Saya pernah membintangi film layar lebar serta tampil di podcast populer bersama tokoh-tokoh seperti Jonathan Liandi. Saya juga memiliki adik, Sheryl Jesslyn (Sze), yang juga aktif sebagai brand ambassador esports.</p>
 
                     </div>
                 </div>
