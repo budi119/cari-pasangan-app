@@ -32,9 +32,19 @@ export default function RootLayout({
         <Navbar></Navbar>
         {children}
         {/* footer */}
-        <div className='text-center mt-20 mb-10'>
-          <h5 className='text-blueplt font-semibold'>FindUrLover Copyright 2024 <br />Dibuat oleh Budi & Adhyt</h5>
+        <div className='container mx-auto max-w-full h-auto text-center py-20 mt-20 bg-redplt'>
+          <div className='max-w-3xl mx-auto px-4'>
+            <p className='text-white text-base font-light mb-6'>
+              Sometimes, love is about finding someone who embraces your imperfections just as much as they admire your strengths. It's about being accepted for who you truly are, without pretense, and growing together through the beauty and flaws that make you unique
+              <br />
+              <span className='text-2xl font-semibold block mt-5'>FindUrLover</span>
+            </p>
+            <h5 className='text-white font-medium'>
+              <span className='text-sm'>Made with &#9825; by Budi & Adhyt</span>
+            </h5>
+          </div>
         </div>
+
         {/* end footer */}
       </body>
     </html>

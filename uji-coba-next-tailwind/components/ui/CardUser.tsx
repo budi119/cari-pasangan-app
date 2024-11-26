@@ -37,7 +37,7 @@ const CardUser = ({
             width={200}
             height={200}
             alt={`${nama || "User"}'s profile`}
-            className="rounded-lg object-cover w-full h-full"
+            className="rounded-t-lg object-cover w-full h-full"
           />
         </div>
       </CardContent>

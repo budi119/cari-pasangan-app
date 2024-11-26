@@ -11,7 +11,7 @@ const People = ({ image, name, description }: PeopleProps) => {
   return (
     <div>
       <li className="py-4 sm:py-4">
-        <div className="flex items-center">
+        <div className="flex items-center transition-transform duration-300 ease-in-out hover:scale-105">
           <div className="flex-shrink-0">
             <img
               className="w-8 h-8 rounded-full object-cover"

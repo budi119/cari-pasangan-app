@@ -21,9 +21,9 @@ const HomePage = () => {
       </section>
       {/* end banner utama */}
       {/* halaman utama */}
-      <div className='container grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-[4fr_1fr] my-auto mx-auto'>
+      <div className='container grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-[4fr_1fr] mt-16 mx-auto'>
         <div className="flex justify-center items-center mt-10 mb-10 px-4 md:px-0 lg:px-0 ">
-          <div className="w-full max-w-full p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+          <div className="w-full max-w-full p-4 bg-white border border-gray-200 rounded-lg shadow-xl sm:p-8 dark:bg-gray-800 dark:border-gray-700">
             <div className="flex items-center justify-between mb-8 pr-2">
               <h5 className="text-xl font-bold leading-none text-gray-900 dark:text-white">People Might You Like</h5>
               <a href="#" className="text-sm font-medium text-redplt hover:underline dark:text-blue-500">
@@ -53,7 +53,7 @@ const HomePage = () => {
           </div>
         </div>
         <div className="flex justify-center items-start sm:ml-5 mt-0 md:mt-10 lg:mt-10 mb-10">
-          <div className="w-full max-w-md p-4 bg-white border border-gray-200 rounded-lg shadow sm:p-8 dark:bg-gray-800 dark:border-gray-700">
+          <div className="w-full max-w-md p-4 bg-white border border-gray-200 rounded-lg shadow-xl sm:p-8 dark:bg-gray-800 dark:border-gray-700">
             <div className="flex items-center justify-between mb-4 pr-2">
               <h5 className="text-xl font-bold leading-none text-gray-900 dark:text-white">Highlight People</h5>
               <a href="#" className="text-sm font-medium text-redplt hover:underline dark:text-blue-500">
