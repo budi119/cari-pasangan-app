@@ -2,21 +2,17 @@ import React from 'react'
 
 const page = () => {
     return (
-        <div className='container flex justify-center mx-auto mt-20 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700'>
+        <div className='container mx-auto my-32 bg-white border border-gray-200 rounded-lg shadow-lg dark:bg-gray-800 dark:border-gray-700'>
             <div className="p-16">
                 <div className="p-8 mt-24">
                     <div className="grid grid-cols-1 md:grid-cols-3">
-                        <div className="grid grid-cols-3 text-center order-last md:order-first mt-20 md:mt-0">
+                        <div className="grid grid-cols-2 text-center order-last md:order-first mt-20 md:mt-0">
                             <div>
-                                <p className="font-bold text-gray-700 text-xl">22</p>
+                                <p className="font-bold text-gray-700 text-2xl">22</p>
                                 <p className="text-gray-400">Visits</p>
                             </div>
                             <div>
-                                <p className="font-bold text-gray-700 text-xl">10</p>
-                                <p className="text-gray-400">View</p>
-                            </div>
-                            <div>
-                                <p className="font-bold text-gray-700 text-xl">89</p>
+                                <p className="font-bold text-gray-700 text-2xl">89</p>
                                 <p className="text-gray-400">Likes</p>
                             </div>
                         </div>
@@ -24,9 +20,9 @@ const page = () => {
                             <img className="object-cover w-48 h-48 mx-auto rounded-full shadow-2xl absolute inset-x-0 top-0 -mt-24 flex items-center justify-center text-indigo-500" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCHwpU4yyNcyYGp5pbezdyw-LWRj9gi9V19g&s" alt="Highlight People" />
 
                         </div>
-                        <div className="space-x-8 flex justify-between mt-32 md:mt-0 md:justify-center">
-                            <button className="text-white py-2 px-4 rounded bg-blue-700 hover:bg-blue-800 shadow hover:shadow-lg font-medium transition transform hover:-translate-y-0.5">  Edit Profile</button>
-                            <button className="text-white py-2 px-4 rounded bg-red-700 hover:bg-red-800 shadow hover:shadow-lg font-medium transition transform hover:-translate-y-0.5">  Delete Account</button>
+                        <div className="space-x-8 flex justify-between mt-44 md:mt-0 md:justify-center">
+                            <button className="text-white py-2 px-4 rounded-full bg-blueplt hover:bg-darkblueplt shadow hover:shadow-lg font-semibold transition transform hover:-translate-y-0.5">Edit Profile</button>
+                            <button className="text-white py-2 px-4 rounded-full bg-redplt hover:bg-darkredplt shadow hover:shadow-lg font-semibold transition transform hover:-translate-y-0.5">Delete Account</button>
                         </div>
                     </div>
                     <div className="mt-20 text-center border-b pb-12">
