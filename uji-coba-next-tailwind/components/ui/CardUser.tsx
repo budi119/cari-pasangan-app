@@ -48,13 +48,13 @@ const CardUser = ({
           <p className="mt-1">{deskSingkat}</p>
         </CardDescription>
       </CardHeader>
-      <CardFooter className="grid sm:grid-cols-2 gap-2">
-        <div className="flex justify-start">
+      <CardFooter>
+        <div className="flex justify-start space-x-3">
           {ig && (
             <a href={ig} target="_blank" rel="noopener noreferrer" className="group">
               <Image
                 src="/ig.ico"
-                className="w-5 h-5 mr-3 transition-transform duration-300 ease-in-out hover:scale-110"
+                className="w-5 h-5 transition-transform duration-300 ease-in-out hover:scale-110"
                 alt="Instagram"
                 width={20}
                 height={20}
@@ -66,7 +66,7 @@ const CardUser = ({
             <a href={tt} target="_blank" rel="noopener noreferrer">
               <Image
                 src="/tt.ico"
-                className="w-5 h-5 mr-3 transition-transform duration-300 ease-in-out hover:scale-110" // Menambahkan kelas hover untuk efek zoom
+                className="w-5 h-5 transition-transform duration-300 ease-in-out hover:scale-110" // Menambahkan kelas hover untuk efek zoom
                 alt="TikTok"
                 width={20}
                 height={20}

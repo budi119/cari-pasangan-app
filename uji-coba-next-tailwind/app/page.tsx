@@ -25,7 +25,7 @@ const HomePage = () => {
         <div className="flex justify-center items-center mt-10 mb-10 px-4 md:px-0 lg:px-0 ">
           <div className="w-full max-w-full p-4 bg-white border border-gray-200 rounded-lg shadow-xl sm:p-8 dark:bg-gray-800 dark:border-gray-700">
             <div className="flex items-center justify-between mb-8 pr-2">
-              <h5 className="text-xl font-bold leading-none text-gray-900 dark:text-white">People Might You Like</h5>
+              <h5 className="text-xl font-bold leading-none text-gray-900 dark:text-white">People You Might Like</h5>
               <a href="#" className="text-sm font-medium text-redplt hover:underline dark:text-blue-500">
                 View all
               </a>
