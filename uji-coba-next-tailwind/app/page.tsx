@@ -13,7 +13,7 @@ const HomePage = () => {
             Find Your True Lover Now!</h1>
           <p className="mb-8 text-lg font-medium capitalize text-white lg:text-xl sm:px-16 lg:px-48">Have a partner with the same hobby?, same place of work? Why not? Together we head towards a harmonious future with your dream partner!</p>
           <div className="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
-            <a href="/find-partner" className="inline-flex justify-center items-center py-4 px-7 font-bold text-center text-white rounded-full bg-redplt hover:bg-darkredplt focus:ring-4 focus:ring-redplt dark:focus:ring-darkredplt">
+            <a href="/find-partner" className="inline-flex justify-center items-center py-4 px-7 font-bold text-center text-white rounded-full bg-redplt hover:bg-darkredplt focus:ring-4 focus:ring-redplt dark:focus:ring-darkredplt shadow hover:shadow-lg transition transform hover:-translate-y-0.5">
               Find Your Lover &#9825;
             </a>
           </div>

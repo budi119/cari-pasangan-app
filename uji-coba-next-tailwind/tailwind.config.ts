@@ -55,6 +55,7 @@ export default {
 			yellowplt: '#FADFA1',
 			creamplt: '#FFF4EA',
 			blueplt: '#7EACB5',
+			darkblueplt: '#6A9DA7',
   		},
   		borderRadius: {
   			lg: 'var(--radius)',
