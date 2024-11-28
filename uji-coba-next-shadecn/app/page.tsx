@@ -25,7 +25,7 @@ export default function Home() {
             Find Your Lover &#9825;
           </Link>
         </div>
-      </section>
+      
       {/* end banner utama */}
       <section className="bg-yellowplt p-0">
         <div className="container grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-[4fr_1fr] mt-16 mx-auto">
@@ -82,6 +82,7 @@ export default function Home() {
             </Card>
           </div>
         </div>
+      </section>
       </section>
     </div>
   );
