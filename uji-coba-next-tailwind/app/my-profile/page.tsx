@@ -32,7 +32,7 @@ const page = () => {
                         <p className="mt-2 text-gray-500">+62 0821 6666 6666</p>
                     </div>
                     <div className="mt-12 flex flex-col justify-center">
-                        <p className="text-gray-600 text-center font-light lg:px-16">Saya berkiprah di dunia esports, saya memiliki banyak talenta lain seperti bernyanyi, modelling, dan bahkan berakting. Saya pernah membintangi film layar lebar serta tampil di podcast populer bersama tokoh-tokoh seperti Jonathan Liandi. Sayajuga memiliki adik, Sheryl Jesslyn (Sze), yang juga aktif sebagai brand ambassador esports.</p>
+                        <p className="text-gray-600 text-center font-light lg:px-16">Saya berkiprah di dunia esports, saya memiliki banyak talenta lain seperti bernyanyi, modelling, dan bahkan berakting. Saya pernah membintangi film layar lebar serta tampil di podcast populer bersama tokoh-tokoh seperti Jonathan Liandi. Saya juga memiliki adik, Sheryl Jesslyn (Sze), yang juga aktif sebagai brand ambassador esports.</p>
 
                     </div>
                 </div>
