@@ -1,6 +1,6 @@
 import Link from "next/link"
-import DiyRecomendedPeople from "@/components/ui/diyrecomendedpeople";
-import DiyHighlightPeople from "@/components/ui/diyhighlightpeople";
+import DiyRecomendedPeople from "@/components/ui/diy-recomended-people";
+import DiyHighlightPeople from "@/components/ui/diy-highlight-people";
 import { Carousel, CarouselContent, CarouselPrevious, CarouselNext } from "@/components/ui/carousel"
 
 import {
@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <div>
       {/* banner utama */}
-      <section className="bg-blueplt p-0">
+      <section className="bg-blueplt p-0 m-0">
         <div className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-44">
           <h1 className="mb-4 mt-10 text-3xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
             Find Your True Lover Now!</h1>
@@ -25,11 +25,12 @@ export default function Home() {
             Find Your Lover &#9825;
           </Link>
         </div>
-      
+      </section>
       {/* end banner utama */}
-      <section className="bg-yellowplt p-0">
-        <div className="container grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-[4fr_1fr] mt-16 mx-auto">
-          <div className="flex justify-center items-center mt-10 mb-10 px-4 md:px-0 lg:px-0">
+      {/* card utama */}
+      <section className="bg-yellowplt p-0 m-0">
+        <div className="container grid grid-cols-1 sm:grid-cols-1 md:grid-cols-1 lg:grid-cols-[4fr_1fr] mx-auto sm:p-0 md:p-5 lg:p-10 xl:p-20">
+          <div className="flex justify-start items-start mt-10 mb-10 px-4 md:px-0 lg:px-0">
             <Card className="p-5">
               <CardHeader>
                 <CardTitle>People You Might Like</CardTitle>
@@ -64,7 +65,7 @@ export default function Home() {
             <Card className="p-5">
               <CardHeader>
                 <CardTitle>Highlight People</CardTitle>
-                <CardDescription>Famous people are here</CardDescription>
+                <CardDescription>Top 4 famous people are here</CardDescription>
               </CardHeader>
               <CardContent>
                 <div className="w-full max-w-80">
@@ -83,7 +84,7 @@ export default function Home() {
           </div>
         </div>
       </section>
-      </section>
+      {/* end card utama */}
     </div>
   );
 }
