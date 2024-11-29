@@ -2,8 +2,8 @@ import React from 'react'
 import Image from 'next/image';
 
 interface DiyHighlightPeopleProps {
-  name?: string;
-  image?: string;
+  name: string;
+  image: string;
   description: string; // Properti untuk gambar profil
 
 }
@@ -14,10 +14,12 @@ const DiyHighlightPeople = ({ image, name, description }: DiyHighlightPeopleProp
       <li className="py-4 sm:py-4">
         <div className="flex items-center transition-transform duration-300 ease-in-out hover:scale-105">
           <div className="flex-shrink-0">
-            <img
+            <Image
               className="w-8 h-8 rounded-full object-cover"
               src={image}
               alt={name}
+              width={600}
+              height={400}
             />
           </div>
           <div className="flex-1 min-w-0 ms-4">
