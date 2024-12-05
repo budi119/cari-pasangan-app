@@ -39,7 +39,7 @@ const DiyNavbar = () => {
                         <Link href="/" className="flex w-full items-center py-2 text-lg font-semibold hover:text-redplt transition-transform duration-300 ease-in-out hover:scale-105" prefetch={false}>
                             Home
                         </Link>
-                        <Link href="/find-lover" className="flex w-full items-center py-2 text-lg font-semibold hover:text-redplt transition-transform duration-300 ease-in-out hover:scale-105" prefetch={false}>
+                        <Link href="find-lover" className="flex w-full items-center py-2 text-lg font-semibold hover:text-redplt transition-transform duration-300 ease-in-out hover:scale-105" prefetch={false}>
                             Find Lover
                         </Link>
                         <Link href="#" className="flex w-full items-center py-2 text-lg font-semibold hover:text-redplt transition-transform duration-300 ease-in-out hover:scale-105" prefetch={false}>
