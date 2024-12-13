@@ -1,5 +1,6 @@
 "use client";
 import React, { useState } from 'react';
+import { useRouter } from 'next/navigation';
 import {
     Command,
     CommandEmpty,
@@ -19,6 +20,7 @@ import {
 } from "lucide-react"
 
 const FindLover = () => {
+    const router = useRouter();
     const [isOpen, setIsOpen] = useState(false);
     const [isHidden, setIsHidden] = useState(false);
     const [searchQuery, setSearchQuery] = useState('');
@@ -33,6 +35,7 @@ const FindLover = () => {
     const pushQuery = (e: React.KeyboardEvent) => {
         if (e.key === 'Enter') {
             console.log("Search Query:", searchQuery);
+            router.push(`/find-lover/${searchQuery}`);
         }
     };
 
@@ -43,7 +46,7 @@ const FindLover = () => {
     const handleBlur = () => {
         setTimeout(() => {
             setIsHidden(false);
-        }, 100); // Tunggu sedikit untuk memungkinkan klik pada item sebelum menutup
+        }, 100);
     };
     return (
         <div className="min-h-screen min-w-screen flex items-center justify-center bg-yellowplt">

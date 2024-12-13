@@ -1,3 +1,5 @@
+"use client"
+
 import Link from "next/link"
 import DiyRecomendedPeople from "@/components/ui/diy-recomended-people";
 import DiyHighlightPeople from "@/components/ui/diy-highlight-people";
@@ -7,19 +9,27 @@ import {
   Card,
   CardContent,
   CardDescription,
-  CardFooter,
+  // CardFooter,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card"
+import { useEffect, useState } from "react";
+import axios from "axios";
 
 export default function Home() {
+  const [data, setData] = useState<any>({});
+
+  useEffect(() => {
+    axios.get('/api/user').then((res: any) => setData(res.data));
+
+  }, []);
   return (
     <div>
       {/* banner utama */}
       <section className="bg-blueplt p-0 m-0">
         <div className="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-44">
           <h1 className="mb-4 mt-10 text-3xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">
-            Find Your True Lover Now!</h1>
+            {data.nama_user}Find Your True Lover Now!</h1>
           <p className="mb-8 text-md font-medium text-white lg:text-lg sm:px-16 lg:px-48">Have a partner with the same hobby?, same place of work? Why not? Together we head towards a harmonious future with your dream partner!</p>
           <Link href="/find-lover" className="inline-flex justify-center items-center py-3 px-7 font-bold text-center text-white rounded-full bg-redplt hover:bg-darkredplt focus:ring-4 focus:ring-redplt dark:focus:ring-darkredplt shadow hover:shadow-lg transition transform hover:-translate-y-0.5">
             Find Your Lover &#9825;
