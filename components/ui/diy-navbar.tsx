@@ -1,22 +1,13 @@
+'use client'
+import { useState } from "react";
 import { Sheet, SheetTrigger, SheetContent } from "@/components/ui/sheet"
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
 import { DialogTitle } from "@/components/ui/dialog"
 import { VisuallyHidden } from '@radix-ui/react-visually-hidden';
 import { JSX, SVGProps } from "react";
-import { Input } from "@/components/ui/input"
-import { Label } from "@/components/ui/label"
-import {
-    DropdownMenu,
-    DropdownMenuContent,
-    DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu"
-import {
-    Tabs,
-    TabsContent,
-    TabsList,
-    TabsTrigger
-} from "@/components/ui/tabs"
+import Tombol from "@/components/ui/tombol";
+
 
 const DiyNavbar = () => {
     return (
@@ -81,71 +72,8 @@ const DiyNavbar = () => {
                     FindUrLover
                 </span>
             </Link>
-            <DropdownMenu>
-                <DropdownMenuTrigger asChild>
-                    <button type="button" className="ml-auto lg:ml-0 text-gray-900 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-full text-sm px-5 py-2 me-2 dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700">
-                        Sign In
-                    </button>
-                </DropdownMenuTrigger>
-                <DropdownMenuContent className="w-[410px]">
-                    <Tabs defaultValue="sign-in" className="w-[400px]">
-                        <TabsList className="grid ml-5 mr-5 grid-cols-2 mt-8">
-                            <TabsTrigger value="sign-in">Sign In</TabsTrigger>
-                            <TabsTrigger value="sign-up">Sign Up</TabsTrigger>
-                        </TabsList>
-                        <TabsContent value="sign-in">
-                            <div className="flex items-center justify-center">
-                                <div className="p-8 w-full max-w-md">
-                                    <h2 className="text-2xl font-semibold text-gray-800">
-                                        Sign In
-                                    </h2>
-                                    <p className="mb-6 mt-1 text-sm text-gray-500">Welcome!, or click Sign Up to create a new account</p>
-                                    <form>
-                                        <div className="space-y-4">
-                                            <div className="space-y-1">
-                                                <Label htmlFor="current">Username</Label>
-                                                <Input id="current" />
-                                            </div>
-                                            <div className="space-y-1">
-                                                <Label htmlFor="new">Password</Label>
-                                                <Input id="new" type="password" />
-                                            </div>
-                                            <button type="submit" className="w-full py-2 px-4 font-bold text-white rounded-full bg-redplt hover:bg-darkredplt focus:ring-4 focus:ring-redplt dark:focus:ring-darkredplt shadow hover:shadow-lg transition transform hover:-translate-y-0.5">
-                                                Sign In
-                                            </button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </TabsContent>
-                        <TabsContent value="sign-up">
-                            <div className="flex items-center justify-center">
-                                <div className="p-8 w-full max-w-md">
-                                    <h2 className="text-2xl font-semibold text-gray-800">
-                                        Sign Up
-                                    </h2>
-                                    <p className="mb-6 mt-1 text-sm text-gray-500">Welcome!, let&apos;s created a new account</p>
-                                    <form>
-                                        <div className="space-y-4">
-                                            <div className="space-y-1">
-                                                <Label htmlFor="current">Username</Label>
-                                                <Input id="current" />
-                                            </div>
-                                            <div className="space-y-1">
-                                                <Label htmlFor="new">Password</Label>
-                                                <Input id="new" type="password" />
-                                            </div>
-                                            <button type="submit" className="w-full py-2 px-4 font-bold text-white rounded-full bg-redplt hover:bg-darkredplt focus:ring-4 focus:ring-redplt dark:focus:ring-darkredplt shadow hover:shadow-lg transition transform hover:-translate-y-0.5">
-                                                Sign Up
-                                            </button>
-                                        </div>
-                                    </form>
-                                </div>
-                            </div>
-                        </TabsContent>
-                    </Tabs>
-                </DropdownMenuContent>
-            </DropdownMenu>
+
+            <Tombol />
 
         </header>
     )
