@@ -1,6 +1,5 @@
-import { NextApiRequest, NextApiResponse } from 'next';
+import { NextRequest, NextResponse } from 'next/server';
 import mysql from 'mysql2/promise';
-import pool from '../../../lib/db';
 
 const dbConfig = {
   host: 'localhost', // Ubah sesuai konfigurasi Anda
@@ -9,35 +8,38 @@ const dbConfig = {
   database: 'db_cari_pasangan',
 };
 
-export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-  if (req.method === 'POST') {
-    const { username, password } = req.body;
+export async function POST(req: NextRequest) {
+  const { username, password } = await req.json();
 
-    if (!username || !password) {
-      return res.status(400).json({ message: 'Username and Password are required' });
+  if (!username || !password) {
+    return NextResponse.json({ message: 'Username and Password are required' }, { status: 400 });
+  }
+
+  try {
+    const connection = await mysql.createConnection(dbConfig);
+    const [rows]: any = await connection.execute(
+      'SELECT * FROM tb_login WHERE username_login = ? AND password_login = ?',
+      [username, password]
+    );
+    await connection.end();
+
+    if (rows.length > 0) {
+      // Login berhasil
+      const user = rows[0];  // Ambil data pengguna dari database
+      return NextResponse.json({
+        success: true,
+        user: {
+          id_login: user.id_login,
+          username: user.username_login,  // Kembalikan username
+          id_user: user.id_user,
+        },
+      });
+    } else {
+      // Login gagal
+      return NextResponse.json({ success: false, message: 'Invalid username or password' }, { status: 401 });
     }
-
-    try {
-      const connection = await mysql.createConnection(dbConfig);
-      const [rows]: any = await connection.execute(
-        'SELECT * FROM tb_login WHERE username = ? AND password = ?',
-        [username, password]
-      );
-      await connection.end();
-
-      if (rows.length > 0) {
-        // Login berhasil
-        res.status(200).json({ success: true, user: rows[0] });
-      } else {
-        // Login gagal
-        res.status(401).json({ success: false, message: 'Invalid username or password' });
-      }
-    } catch (error) {
-      console.error('Database error:', error);
-      res.status(500).json({ success: false, message: 'Internal Server Error' });
-    }
-  } else {
-    res.setHeader('Allow', ['POST']);
-    res.status(405).json({ message: `Method ${req.method} not allowed` });
+  } catch (error) {
+    console.error('Database error:', error);
+    return NextResponse.json({ success: false, message: 'Internal Server Error' }, { status: 500 });
   }
 }

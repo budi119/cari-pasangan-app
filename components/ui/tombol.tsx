@@ -18,7 +18,7 @@ import {
 
 const Tombol = () => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
-    const [userName, setUserName] = useState("");
+    const [userName, setUserName] = useState("");  // Menyimpan username
     const [error, setError] = useState("");
     const [signUpError, setSignUpError] = useState("");
     const [successMessage, setSuccessMessage] = useState("");
@@ -32,8 +32,8 @@ const Tombol = () => {
         try {
             const response = await axios.post("/api/login", { username, password });
             if (response.data.success) {
-                setUserName(response.data.user.username);
-                setIsLoggedIn(true);
+                setUserName(response.data.user.username);  // Menyimpan username dari database
+                setIsLoggedIn(true);  // Mark as logged in
                 setSuccessMessage("Login successful!");
             } else {
                 setError(response.data.message);
@@ -46,38 +46,41 @@ const Tombol = () => {
     // Handle Sign Up
     const handleSignUp = async (e: React.FormEvent) => {
         e.preventDefault();
+    
         const username = (document.getElementById("signup-username") as HTMLInputElement).value;
         const password = (document.getElementById("signup-password") as HTMLInputElement).value;
-
-        if (!username || !password) {
-            setSignUpError("Username and Password are required");
-            return;
-        }
-
+    
         try {
             const response = await axios.post("/api/signup", { username, password });
-
+    
             if (response.data.success) {
-                setUserName(response.data.user.username);
+                alert(`User created successfully. User ID: ${response.data.userId}`);
+                setUserName(username);  // Set username setelah registrasi berhasil
                 setIsLoggedIn(true);
-                setSuccessMessage("Signup successful!");
             } else {
-                setSignUpError(response.data.message);
+                alert(response.data.message || "Sign Up failed.");
             }
-        } catch (err) {
-            setSignUpError("Sign Up failed. Please try again.");
+        } catch (error) {
+            console.error("Sign Up Error:", error);
+            alert("An error occurred during Sign Up.");
         }
     };
 
     // Handle Logout
     const handleLogout = async () => {
         try {
-            await axios.post("/api/logout"); // Call backend API for logout (optional)
-            setUserName("");
-            setIsLoggedIn(false);
-            setSuccessMessage("Logout successful!");
-        } catch (err) {
-            setError("Logout failed. Please try again.");
+            const response = await axios.post("/api/logout");
+    
+            if (response.data.success) {
+                setUserName("");  // Clear the username
+                setIsLoggedIn(false);  // Mark as logged out
+                alert("Successfully logged out.");
+            } else {
+                alert(response.data.message || "Logout failed.");
+            }
+        } catch (error) {
+            console.error("Logout Error:", error);
+            alert("An error occurred while logging out.");
         }
     };
 
@@ -182,4 +185,4 @@ const Tombol = () => {
     );
 };
 
-export default Tombol;
+export default Tombol

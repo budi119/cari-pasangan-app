@@ -1,43 +1,39 @@
-import { NextApiRequest, NextApiResponse } from 'next';
-import { RowDataPacket, OkPacket } from 'mysql2';
-import pool from '../../../lib/db';
+import { NextRequest, NextResponse } from 'next/server';
+import pool from '@/lib/db'; // Pastikan path ini sesuai dengan lokasi koneksi database Anda.
 
-export default async function handler(req: NextApiRequest, res: NextApiResponse) {
-  if (req.method === 'POST') {
-    const { username, password } = req.body;
+export async function POST(req: NextRequest) {
+  try {
+    const { username, password } = await req.json(); // Parse request body
 
+    // Validasi input
     if (!username || !password) {
-      return res.status(400).json({ success: false, message: 'Username and password are required' });
+      return NextResponse.json(
+        { success: false, message: "Username and password are required" },
+        { status: 400 }
+      );
     }
 
-    try {
-      // Cek apakah username sudah ada
-      const [rows] = await pool.query<RowDataPacket[]>(
-        'SELECT * FROM tb_login WHERE username = ?',
-        [username]
-      );
+    // Cari nilai maksimum id_user
+    const [rows]: any = await pool.query('SELECT MAX(id_user) AS maxId FROM tb_login');
+    const maxId = rows[0].maxId || 0; // Jika tidak ada data, mulai dari 0
+    const newIdUser = maxId + 1;
 
-      if (rows.length > 0) {
-        return res.status(400).json({ success: false, message: 'Username already exists' });
-      }
+    // Masukkan data baru ke tabel
+    const insertQuery = `
+      INSERT INTO tb_login (id_user, username_login, password_login)
+      VALUES (?, ?, ?)
+    `;
+    await pool.query(insertQuery, [newIdUser, username, password]);
 
-      // Insert pengguna baru
-      const [result] = await pool.query<OkPacket>(
-        'INSERT INTO tb_login (username, password) VALUES (?, ?)',
-        [username, password]
-      );
-
-      if (result.affectedRows > 0) {
-        return res.status(201).json({ success: true, message: 'Signup successful' });
-      } else {
-        return res.status(500).json({ success: false, message: 'Signup failed' });
-      }
-    } catch (error) {
-      console.error('Database error:', error);
-      return res.status(500).json({ success: false, message: 'Internal Server Error' });
-    }
-  } else {
-    res.setHeader('Allow', ['POST']);
-    return res.status(405).json({ message: `Method ${req.method} not allowed` });
+    // Kirim respons sukses
+    return NextResponse.json({
+      success: true,
+      message: "User successfully registered",
+      user: { id_user: newIdUser, username }
+    }, { status: 201 });
+  } catch (error) {
+    console.error("Error inserting user:", error);
+    // Jika terjadi error, kirim respons error
+    return NextResponse.json({ success: false, message: "Internal server error" }, { status: 500 });
   }
 }
